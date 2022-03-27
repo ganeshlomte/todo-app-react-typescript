@@ -25,6 +25,7 @@ const TodoItem = (props:any) => {
     >
       <textarea
         ref={inputRef}
+        disabled
         defaultValue={item.item}
         onKeyPress={(e) => update(item.id, inputRef.current.value, e)}
       />
@@ -60,7 +61,7 @@ const TodoItem = (props:any) => {
           />
         </button>{" "}
       </div>
-      {item.completed && <span className="completed">done</span>}
+      {item.completed && <span className="completed">Done</span>}
     </li>
   );
 };

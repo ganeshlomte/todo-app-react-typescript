@@ -174,8 +174,7 @@ body {
 
 .completed {
   position: absolute;
-  right: 0.3rem;
-  top: 0.3rem;
+  bottom: 0.3rem;
   background-color: #867bcd;
   border: 2px solid #272727;
   color: #e1ebfd;
